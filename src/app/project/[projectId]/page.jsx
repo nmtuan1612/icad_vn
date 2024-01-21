@@ -209,7 +209,14 @@ const projectPage = () => {
               "--swiper-navigation-color": "#fff",
               "--swiper-pagination-color": "#fff",
             }}
-            slidesPerView={3}
+            breakpoints={{
+              0: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 3,
+              },
+            }}
             speed={2000}
             parallax={true}
             autoplay={{
